@@ -1,5 +1,5 @@
 # LottieView
-[![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)[![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fairbnb%2Flottie-ios%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/airbnb/lottie-ios) [![Swift Versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fairbnb%2Flottie-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/airbnb/lottie-ios)
+[![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/) [![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fairbnb%2Flottie-ios%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/airbnb/lottie-ios) [![Swift Versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fairbnb%2Flottie-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/airbnb/lottie-ios)
 
 ## About LottieView
 This package contains the necessary to create a SwiftUI view in which an animation will be displayed with the help of the [Lottie iOS library](https://github.com/airbnb/lottie-ios).
@@ -7,7 +7,7 @@ This package contains the necessary to create a SwiftUI view in which an animati
 ![Example2](https://github.com/airbnb/lottie-ios/blob/master/_Gifs/Examples2.gif)
 
 ## Requirements
-Deployment target: iOS 13.
+Deployment target: **iOS 13**.
 
 ## Installing LottieView
 ### Swift Package Manager
@@ -46,7 +46,7 @@ LottieView(lottieData: lottieAnimation)
 If you want to control more parameters, you can do it like this:
 ```swift
 let lottieData = LottieData(fileName: "animation.json", speed: 0.75, loop: .playOnce, startProgress: 0.1, endProgress: 0.9, backgroundBehavior: .continuePlaying, completion: { didAnimationCompletedPlaying in
-    // TODO: write your closure here
+    // TODO: write your code here
 })
 LottieView(lottieData: lottieData)
 ```
