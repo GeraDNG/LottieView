@@ -4,14 +4,26 @@
 ## About LottieView
 This package contains the necessary to create a SwiftUI view in which an animation will be displayed with the help of the [Lottie iOS library](https://github.com/airbnb/lottie-ios).
 
+![Example2](https://github.com/airbnb/lottie-ios/blob/master/_Gifs/Examples2.gif)
+
+## Requirements
+Deployment target: iOS 13.
+
 ## Installing LottieView
 ### Swift Package Manager
 To install LottieView using Swift Package Manager you can follow the tutorial published by Apple using the URL for the LottieView repo with the current version:
 1. In Xcode, select “File” → “Swift Packages” → “Add Package Dependency”.
 2. Enter https://github.com/GeraDNG/LottieView.
 
+You can also add LottieView as a dependency to your `Package.swift`:
+```swift
+dependencies: [
+  .package(url: "https://github.com/GeraDNG/LottieView", from: "1.0.0")
+]
+```
+
+
 ## Usign LottieView
-**This package needs at least iOS 13.**
 First, you need to download an animation. You can find a lot at: https://lottiefiles.com. After that, you need to add the file to your Xcode project.
 To display this animation in your SwiftUI view, you need to import this library, by adding:
 ```swift
@@ -38,3 +50,12 @@ let lottieData = LottieData(fileName: "animation.json", speed: 0.75, loop: .play
 })
 LottieView(lottieData: lottieData)
 ```
+
+## Dependencies
+These third-party SDK are used:
+* [Lottie](https://github.com/airbnb/lottie-ios).
+
+## Data collection
+The Lottie and LottieView SDK does not collect any data. We provide this notice to help you fill out [App Privacy Details](https://developer.apple.com/app-store/app-privacy-details/).
+
+
