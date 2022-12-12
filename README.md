@@ -38,17 +38,17 @@ An entity of type `LottieData` must be created, which contains the necessary con
 * `backgroundBehavior`: Describes the behavior of an AnimationView when the app is moved to the background. Default value is `.pauseAndRestore`.
 * `completion`: An optional completion closure (`(Bool) -> Void`) to be called when the animation stops. Default is `nil`.
 
-So, you can use something like this to display a lottie animation in your SwiftUI view:
+So, you can use something like this to display a Lottie animation in your SwiftUI view:
 ```swift
 let lottieAnimation = LottieData(fileName: "animation.json")
 LottieView(lottieData: lottieAnimation)
 ```
 If you want to control more parameters, you can do it like this:
 ```swift
-let lottieData = LottieData(fileName: "animation.json", speed: 0.75, loop: .playOnce, startProgress: 0.1, endProgress: 0.9, backgroundBehavior: .continuePlaying, completion: { didAnimationCompletedPlaying in
+let lottieAnimation = LottieData(fileName: "animation.json", speed: 0.75, loop: .playOnce, startProgress: 0.1, endProgress: 0.9, backgroundBehavior: .continuePlaying, completion: { didAnimationCompletedPlaying in
     // TODO: write your code here
 })
-LottieView(lottieData: lottieData)
+LottieView(lottieData: lottieAnimation)
 ```
 
 ## Dependencies
